@@ -1,0 +1,32 @@
+$color: (
+  'action': #2196f3,
+  'contact': #757575,
+  'footer-contact': #ffffff60,
+  'text': #212121,
+  'dark-text': #000000,
+  'icon-nonaction': #afb1b8,
+  'light-text': #ffffff,
+  'form': #75757580,
+);
+
+$bg-color: (
+  'basic-background': #ffffff,
+  'footer-bg': #2f303a,
+  'secondary-bg': #f5f4fa,
+  'intro-bg': #2f303a,
+);
+
+$font: (
+  'primary': 'Roboto',
+  'secondary': 'Raleway',
+);
+
+@function get-bg-color($key) {
+  @return map-get($bg-color, $key);
+}
+@function get-font($key) {
+  @return map-get($font, $key);
+}
+@function get-color($key) {
+  @return map-get($color, $key);
+}

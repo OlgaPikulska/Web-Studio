@@ -1,0 +1,106 @@
+.intro__background {
+  background-color: get-bg-color(intro-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .intro__background {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+      url(../images/bg_mobile_480x400@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .intro__background {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+      url(../images/bg_mobile_480x400.jpg);
+    // background-size: 480px 400px;
+  }
+}
+
+// nie wiem dlaczego to nie działa z pixel-ratio
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .intro__background {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+      url(../images/bg_tablet_768x400@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .intro__background {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+      url(../images/bg_tablet_768x400.jpg);
+    // background-size: 768px 400px;
+    // max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro__background {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+      url(../images/bg_desktop_1600x600.jpg);
+    // background-size: 1600px 600px;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  // (height:1600px; pierwotnie było na .intro__background, ale chyba to coś)
+
+  &__title {
+    font-family: get-font(primary);
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: get-color(light-text);
+    padding-top: 118px;
+    padding-bottom: 30px;
+    width: 365px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .intro {
+    height: 600px;
+    &__title {
+      font-size: 44px;
+      line-height: 1.37;
+      padding-top: 200px;
+      width: 696px;
+    }
+  }
+}
+
+.intro__btn {
+  font-family: get-font(primary);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: get-color(light-text);
+  cursor: pointer;
+  background-color: get-color(action);
+  width: 200px;
+  height: 50px;
+  border: 1px none;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

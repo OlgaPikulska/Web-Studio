@@ -1,0 +1,32 @@
+.socials {
+  display: inline-flex;
+  gap: 10px;
+}
+.socials__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.socials__icons--instagram {
+  width: 20px;
+  height: 20px;
+}
+.socials__icons--twitter {
+  width: 20px;
+  height: 16.25px;
+}
+
+.socials__icons--facebook {
+  width: 30px;
+  height: 30px;
+}
+
+.socials__icons--linkedin {
+  width: 20px;
+  height: 20px;
+}
