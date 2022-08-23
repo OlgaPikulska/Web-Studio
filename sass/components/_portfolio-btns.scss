@@ -1,5 +1,4 @@
 .buttons {
-  //   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -18,10 +17,10 @@
   border: 1px none;
   border-radius: 4px;
   height: 38px;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  padding-left: 22px;
-  padding-right: 22px;
+  // margin-top: 94px;
+  // margin-bottom: 50px;
+  // padding-left: 22px;
+  // padding-right: 22px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, color, box-shadow;
@@ -31,5 +30,21 @@
     color: get-color(light-text);
     background-color: get-color(action);
     box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .buttons {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+@media screen and (min-width: 1200px) {
+  .buttons__item {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 }

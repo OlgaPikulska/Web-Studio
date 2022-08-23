@@ -180,9 +180,9 @@ header {
 
 .logo {
   font-family: "Roboto";
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: left;
   text-decoration: none;
@@ -198,10 +198,26 @@ header {
 }
 
 .page-footer__logo {
-  padding-left: 15px;
   padding-bottom: 20px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .page-footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__logo {
+    padding-left: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 .intro__background {
   background-color: #2f303a;
   background-size: cover;
@@ -696,24 +712,26 @@ input:focus + .form__icon {
   height: 100%;
 }
 
+.team {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
 .team__figure {
   display: block;
   border: 0px none;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706), 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   justify-content: center;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  gap: 30px;
 }
 
 .team__title {
   font-family: "Roboto";
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.17;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 50px;
@@ -745,7 +763,6 @@ input:focus + .form__icon {
 
 .team__socials {
   padding-top: 16px;
-  padding-left: 32px;
   padding-bottom: 30px;
 }
 
@@ -762,53 +779,74 @@ input:focus + .form__icon {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .team {
+    display: block;
+  }
   .team__figure {
+    width: 450px;
+    margin-top: 30px;
+  }
+  .team__title {
+    padding-bottom: 0px;
+  }
+  .team__socials {
+    padding-bottom: 24px;
+    justify-content: center;
     width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
   .team {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    gap: 30px;
   }
   .team__figure {
     width: 354px;
   }
+  .team__title {
+    padding-bottom: 30px;
+    padding-top: 0px;
+  }
+  .team__socials {
+    padding-bottom: 24px;
+    justify-content: center;
+    width: 354px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .team {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    gap: 30px;
-  }
   .team__figure {
+    width: 270px;
+  }
+  .team__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .team__socials {
+    justify-content: center;
     width: 270px;
   }
 }
 .clients__title {
   font-family: "Roboto";
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.17;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 50px;
-  margin: 0px;
+  padding-bottom: 30px;
 }
 
 .clients__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
@@ -862,6 +900,23 @@ input:focus + .form__icon {
   height: 43.96px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .clients__icons {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__icons {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+  }
+}
 footer {
   background-color: #2f303a;
 }
@@ -871,7 +926,7 @@ footer {
   flex-direction: row;
   align-items: baseline;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 }
 
 .page-footer__contact {
@@ -880,11 +935,10 @@ footer {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.3764705882);
   display: block;
-  padding-left: 15px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
@@ -900,9 +954,8 @@ footer {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-align: left;
-  padding-left: 15px;
-  padding-bottom: 9px;
+  text-align: center;
+  padding-bottom: 0px;
   font-style: normal;
 }
 
@@ -912,10 +965,7 @@ footer {
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.page-footer__section {
-  padding-left: 70px;
+  text-align: center;
 }
 
 .page-footer__socials {
@@ -933,13 +983,11 @@ footer {
   background-color: #2196f3;
 }
 
-.newsletter {
-  padding-left: 78px;
-}
 .newsletter__input {
   margin-top: 20px;
+  margin-bottom: 20px;
   height: 50px;
-  width: 358px;
+  width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
@@ -1004,8 +1052,93 @@ input:-webkit-autofill {
   padding: 10px 24px 10px 0;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .page-footer {
+    display: block;
+  }
+  .page-footer__contact {
+    padding-top: 8px;
+  }
+  .page-footer__title {
+    padding-top: 60px;
+  }
+  .page-footer__socials {
+    justify-content: center;
+  }
+  .newsletter__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__contact {
+    padding-top: 8px;
+  }
+  .page-footer--tablet {
+    display: flex;
+    flex-direction: column;
+  }
+  .tablet--section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  .page-footer__address {
+    padding-left: 61px;
+  }
+  .newsletter__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-footer__section {
+    padding-left: 144px;
+    padding-right: 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    padding-bottom: 60px;
+  }
+  .page-footer__contact {
+    text-align: left;
+    padding-top: 9px;
+  }
+  .page-footer__address {
+    text-align: left;
+  }
+  .page-footer__title {
+    text-align: left;
+    padding-top: 12px;
+  }
+  .page-footer__section {
+    padding-left: 70px;
+  }
+  .newsletter {
+    padding-left: 78px;
+  }
+  .newsletter__input {
+    width: 358px;
+  }
+  .page-footer--tablet {
+    display: flex;
+    flex-direction: row;
+  }
+  .tablet--section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  .newsletter__form {
+    display: flex;
+    align-items: center;
+  }
+}
 .socials {
-  display: inline-flex;
+  display: flex;
   gap: 10px;
 }
 
@@ -1058,10 +1191,6 @@ input:-webkit-autofill {
   border: 1px none;
   border-radius: 4px;
   height: 38px;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  padding-left: 22px;
-  padding-right: 22px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, color, box-shadow;
@@ -1072,6 +1201,19 @@ input:-webkit-autofill {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275), 0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725), 0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .buttons {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons__item {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
 .grid__signature {
   font-family: "Roboto";
   font-size: 18px;

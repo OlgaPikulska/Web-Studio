@@ -1,5 +1,5 @@
 .socials {
-  display: inline-flex;
+  display: flex;
   gap: 10px;
 }
 .socials__icons {
@@ -30,3 +30,6 @@
   width: 20px;
   height: 20px;
 }
+
+// .socials {
+//   display: inline-flex;}
