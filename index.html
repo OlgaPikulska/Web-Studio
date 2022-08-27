@@ -16,7 +16,7 @@
   </head>
   <body class="center">
     <header>
-      <!-- <div class="container page-header">
+      <div class="container page-header">
         <h2 class="page-header__logo">
           <a href="index.html" class="logo">Web<span class="logo--header">Studio</span> </a>
         </h2>
@@ -36,31 +36,61 @@
                 <svg class="contact__icon-mail">
                   <use href="images/icons.svg#icon-envelope"></use>
                 </svg>
-                info@devstudio.com</a
-              >
+                info@devstudio.com</a>
             </li>
-
             <li>
               <a href="tel:+48111111111" class="contact__item contact__item--tel">
                 <svg class="contact__icon-tel">
                   <use href="images/icons.svg#icon-smartphone"></use>
                 </svg>
-                +48 111 111 111</a
-              >
+                +48 111 111 111</a>
             </li>
           </ul>
         </div>
-      </div> -->
+        <button type="button" class="js-open-menu"><svg class="menu__open-btn"><use href="images/icons.svg#icon-menu_40px"></use></svg></button>
+      </div>
+
+        <!-- MENU MOBILE -->
+          <div class="js-menu-container">
+          <button type="button" class="js-close-menu"><svg class="menu__button-icon"><use href="images/icons.svg#icon-close_24px"></svg></button>
+        <nav>
+          <ul class="mobile-nav">
+            <li><a href="index.html" class="mobile-nav__item">Agencja</a></li>
+            <li><a href="portfolio.html" class="mobile-nav__item">Portfolio</a></li>
+            <li><a href="/Kontakt" class="mobile-nav__item">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul>
+            <li>
+              <a href="tel:+48111111111" class="menu__contact menu__contact--tel">
+                +48 111 111 111</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="menu__contact menu__contact--mail">
+                info@devstudio.com</a
+              >
+            </li></ul>
+        </div>
+        <ul class="menu__socials">
+          <li><a href="#" class="menu__socials--item"></a>Instagram</li>
+          <li><a href="#" class="menu__socials--item"></a>Twitter</li>
+          <li><a href="#" class="menu__socials--item"></a>Facebook</li>
+          <li><a href="#" class="menu__socials--item"></a>LinkedIn</li>
+        </ul>
+        </div>
+      </div>   
     </header>
+
     <main>
-      <section class="intro__background">
-        <div class="container">
+       <!-- <section class="intro__background">
+         <div class="container">
           <div class="intro">
             <h1 class="intro__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
             <button type="button" class="intro__btn" data-modal-open>Zamów usługę</button>
-          </div>
+          </div> 
 
-          <!-- <div class="backdrop is-hidden" data-modal>
+          <div class="backdrop is-hidden" data-modal>
             <div class="modal__box">
               <button type="button" class="modal__close-btn" data-modal-close>X</button>
               <h2 class="form__title">Zostaw swoje dane w formularzu poniżej</h2>
@@ -123,9 +153,9 @@
               </form>
             </div>
           </div>
-        </div> -->
-      </section>
-      <section class="section section--widgets">
+        </div>
+      </section> -->
+      <!-- <section class="section section--widgets">
         <div class="container">
           <ul class="widgets">
             <li>
@@ -179,9 +209,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="gallery section container">
+      <!-- <section class="gallery section container">
         <h2 class="gallery__title">Czym się zajmujemy</h2>
         <ul class="gallery__position">
           <li>
@@ -220,16 +250,16 @@
             </div>
           </li>
         </ul>
-      </section>
+      </section> -->
 
-      <section class="team__background section">
+      <!-- <section class="team__background section">
         <div class="container">
           <h2 class="team__title">Nasz zespół</h2>
           <ul class="team">
             <li>
               <figure class="team__figure">
                 <img
-                  class="no-gap"
+                  class="no-gap team--media"
                   src="images/john_doe_desk.jpg"
                   alt="Zdjęcie Product Designera"
                   width="270"
@@ -275,7 +305,7 @@
             <li>
               <figure class="team__figure">
                 <img
-                  class="no-gap"
+                  class="no-gap team--media"
                   src="images/frontend_dev_desk.jpg"
                   alt="Zdjęcie Frontend Developera"
                   width="270"
@@ -321,7 +351,7 @@
             <li>
               <figure class="team__figure">
                 <img
-                  class="no-gap"
+                  class="no-gap team--media"
                   src="images/marketing_desk.jpg"
                   alt="Zdjęcie Pracownika Marketingu"
                   width="270"
@@ -367,7 +397,7 @@
             <li>
               <figure class="team__figure">
                 <img
-                  class="no-gap"
+                  class="no-gap team--media"
                   src="images/UI_Designer_desk.jpg"
                   alt="Zdjęcie UI Designera"
                   width="270"
@@ -411,9 +441,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="clients__title">Nasi klienci</h2>
           <ul class="clients__list">
@@ -449,73 +479,82 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>  -->
     </main>
 
-    <footer>
+    <!-- <footer>
       <div class="container">
         <div class="page-footer">
           <ul class="page-footer--tablet">
             <li class="tablet--section">
               <section>
-            <h2 class="page-footer__logo">
-              <a href="index.html" class="logo">Web<span class="logo--footer">Studio</span></a>
-            </h2>
-            <address class="page-footer__address">m. Warszawa, Aleje Jerozolimskie 21</address>
-            <a href="mailto:info@example.com" class="page-footer__contact">info@example.com</a>
-            <a href="tel:+48111111111" class="page-footer__contact">+48 111 111 111</a>
-          </section>
-          <section class="page-footer__section">
-            <h4 class="page-footer__title">Dołącz do nas</h4>
-            <ul class="socials page-footer__socials">
-              <li>
-                <a href class="socials__icons socials__icons--footer">
-                  <svg class="socials__icons--instagram">
-                    <use href="images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href class="socials__icons socials__icons--footer">
-                  <svg class="socials__icons--twitter">
-                    <use href="images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href class="socials__icons socials__icons--footer">
-                  <svg class="socials__icons--facebook">
-                    <use href="images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href class="socials__icons socials__icons--footer">
-                  <svg class="socials__icons--linkedin">
-                    <use href="images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </section></li>
-            <li><section class="newsletter">
-            <h4 class="page-footer__title">Zapisz się do newslettera</h4>
-            <form name="signup_form" autocomplete="on" novalidate class="newsletter__form">
-              <label>
-                <input type="email" name="E-mail" placeholder="E-mail" class="newsletter__input" />
-              </label>
-              <button type="submit" class="newsletter__btn">
-                <span class="newsletter__btn-text">Zapisz się</span>
-                <svg class="newsletter__btn-icon">
-                  <use xlink:href="images/icons.svg#icon-icon_send"></use>
-                </svg>
-              </button>
-            </form>
-          </section></li>
+                <h2 class="page-footer__logo">
+                  <a href="index.html" class="logo">Web<span class="logo--footer">Studio</span></a>
+                </h2>
+                <address class="page-footer__address">m. Warszawa, Aleje Jerozolimskie 21</address>
+                <a href="mailto:info@example.com" class="page-footer__contact">info@example.com</a>
+                <a href="tel:+48111111111" class="page-footer__contact">+48 111 111 111</a>
+              </section>
+              <section class="page-footer__section">
+                <h4 class="page-footer__title">Dołącz do nas</h4>
+                <ul class="socials page-footer__socials">
+                  <li>
+                    <a href class="socials__icons socials__icons--footer">
+                      <svg class="socials__icons--instagram">
+                        <use href="images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href class="socials__icons socials__icons--footer">
+                      <svg class="socials__icons--twitter">
+                        <use href="images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href class="socials__icons socials__icons--footer">
+                      <svg class="socials__icons--facebook">
+                        <use href="images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href class="socials__icons socials__icons--footer">
+                      <svg class="socials__icons--linkedin">
+                        <use href="images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </li>
+            <li>
+              <section class="newsletter">
+                <h4 class="page-footer__title">Zapisz się do newslettera</h4>
+                <form name="signup_form" autocomplete="on" novalidate class="newsletter__form">
+                  <label>
+                    <input
+                      type="email"
+                      name="E-mail"
+                      placeholder="E-mail"
+                      class="newsletter__input"
+                    />
+                  </label>
+                  <button type="submit" class="newsletter__btn">
+                    <span class="newsletter__btn-text">Zapisz się</span>
+                    <svg class="newsletter__btn-icon">
+                      <use xlink:href="images/icons.svg#icon-icon_send"></use>
+                    </svg>
+                  </button>
+                </form>
+              </section>
+            </li>
           </ul>
         </div>
       </div>
-    </footer>
+    </footer> --> -->
     <script src="./js/modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@
   text-align: left;
   display: block;
   border: 1px none;
-  margin: 0;
+  // margin: 0;
   padding: 20px 24px 4px 24px;
 }
 
@@ -20,7 +20,7 @@
   text-align: left;
   color: get-color(contact);
   display: block;
-  border: 1px none;
+  // border: 1px none;
   margin: 0;
   padding: 0px 24px 20px 24px;
 }
@@ -95,4 +95,40 @@
 
 .grid__box:hover .grid__label {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .grid {
+    display: block;
+  }
+  .grid__box {
+    width: 450px;
+    margin-top: 30px;
+  }
+  // .grid__box:first-child {
+  //   margin-top: 40px;
+  // }
+  .grid--media {
+    width: 450px;
+  }
+  .grid:nth-child(1) {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .grid {
+    justify-content: flex-start;
+  }
+  .grid__box {
+    width: 354px;
+  }
+  .grid--media {
+    width: 354px;
+  }
+  .grid:nth-child(1),
+  .grid:nth-child(2) {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
 }

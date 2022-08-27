@@ -16,8 +16,8 @@
 }
 
 .modal__box {
-  height: 581px;
-  width: 528px;
+  height: 609px;
+  width: 450px;
   border-radius: 4px;
   background-color: get-bg-color(basic-background);
   display: flex;
@@ -40,7 +40,7 @@
   cursor: pointer;
   margin-top: 8px;
   margin-right: 8px;
-  margin-left: 490px;
+  margin-left: 412px;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform, background-color, color;
@@ -61,5 +61,15 @@
 .is-hidden {
   .modal__box {
     transform: scale(0.5);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__box {
+    height: 581px;
+    width: 528px;
+  }
+  .modal__close-btn {
+    margin-left: 490px;
   }
 }

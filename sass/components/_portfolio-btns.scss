@@ -19,8 +19,8 @@
   height: 38px;
   // margin-top: 94px;
   // margin-bottom: 50px;
-  // padding-left: 22px;
-  // padding-right: 22px;
+  padding-left: 22px;
+  padding-right: 22px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, color, box-shadow;
@@ -36,6 +36,12 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .buttons {
     flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .buttons__item {
+    margin-top: 7px;
+    margin-bottom: 0px;
+    // daję margin-top pierwszej karcie ??
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -44,7 +50,5 @@
   .buttons__item {
     margin-top: 94px;
     margin-bottom: 50px;
-    padding-left: 22px;
-    padding-right: 22px;
   }
 }
