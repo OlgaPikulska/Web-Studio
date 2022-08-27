@@ -198,6 +198,7 @@ header {
     height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
+    background: #ffffff;
     fill: #000000;
   }
   .menu__open-btn:hover, .menu__open-btn:focus {
@@ -1459,6 +1460,7 @@ input:-webkit-autofill {
   height: 796px;
   border: 1px solid black;
   padding-left: 40px;
+  z-index: 999;
 }
 
 .js-close-menu {

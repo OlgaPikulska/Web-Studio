@@ -3,6 +3,7 @@
   height: 796px;
   border: 1px solid black;
   padding-left: 40px;
+  z-index: 999;
 }
 .js-close-menu {
   background: get-bg-color(basic-background);
