@@ -130,7 +130,7 @@ header {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   header {
     height: 60px;
   }
@@ -151,8 +151,8 @@ header {
   .menu__open-btn {
     width: 40px;
     height: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    // margin-top: 10px;
+    // margin-bottom: 10px;
     background: get-bg-color(basic-background);
     fill: get-color(dark-text);
     &:hover,
@@ -162,9 +162,9 @@ header {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  // .menu__open-btn {
-  //   display: none;
-  // }
+  .menu__open-btn {
+    display: none;
+  }
   .page-header {
     justify-content: space-between;
     &__logo {
@@ -192,8 +192,7 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
+  .menu__open-btn {
+    display: none;
+  }
 }
-//   .menu__open-btn {
-//     display: none;
-//   }
-// }

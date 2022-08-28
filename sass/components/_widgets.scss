@@ -35,10 +35,10 @@
   color: get-color(contact);
   display: flex;
   justify-content: flex-end;
-  width: 270px;
+  // width: 270px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .widgets__background {
     margin-top: 30px;
     width: 450px;
@@ -93,6 +93,9 @@
   }
   .section--widgets {
     padding-bottom: 0px;
+  }
+  .widgets__text {
+    width: 270px;
   }
 }
 

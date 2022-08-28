@@ -73,17 +73,17 @@
             </li></ul>
         </div>
         <ul class="menu__socials">
-          <li><a href="#" class="menu__socials--item"></a>Instagram</li>
-          <li><a href="#" class="menu__socials--item"></a>Twitter</li>
-          <li><a href="#" class="menu__socials--item"></a>Facebook</li>
-          <li><a href="#" class="menu__socials--item"></a>LinkedIn</li>
+          <li><a href="#" class="menu__socials--item menu__socials--item--first">Instagram</a></li>
+          <li><a href="#" class="menu__socials--item">Twitter</a></li>
+          <li><a href="#" class="menu__socials--item">Facebook</a></li>
+          <li><a href="#" class="menu__socials--item menu__socials--item--last">LinkedIn</a></li>
         </ul>
         </div>
       </div>   
     </header>
 
     <main>
-       <!-- <section class="intro__background">
+       <section class="intro__background">
          <div class="container">
           <div class="intro">
             <h1 class="intro__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
@@ -154,8 +154,8 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="section section--widgets">
+      </section>
+      <section class="section section--widgets">
         <div class="container">
           <ul class="widgets">
             <li>
@@ -209,9 +209,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="gallery section container">
+      <section class="gallery section container">
         <h2 class="gallery__title">Czym się zajmujemy</h2>
         <ul class="gallery__position">
           <li>
@@ -250,21 +250,37 @@
             </div>
           </li>
         </ul>
-      </section> -->
+      </section>
 
-      <!-- <section class="team__background section">
+      <section class="team__background section">
         <div class="container">
           <h2 class="team__title">Nasz zespół</h2>
           <ul class="team">
             <li>
               <figure class="team__figure">
-                <img
+                <picture>
+                            <source srcset="
+                                            images/john_doe_mobile.jpg   1x,
+                                            images/john_doe_mobile@2x.jpg 2x
+                                          " media="(max-width: 767px)" />
+                            <source srcset="
+                                            images/john_doe_tab.jpg   1x,
+                                            images/john_doe_tab@2x.jpg 2x
+                                          " media="(max-width: 1199px)" />
+                            <source srcset="
+                                           images/john_doe_desk.jpg 1x,
+                                           images/john_doe_desk@2x.jpg x2
+                                          " media="(min-width: 1200px)" />
+                            <img class="no-gap team--media" src="images/john_doe_mobile.jpg" alt="Zdjęcie Product Designera" />
+                        </picture>
+                <!-- <img
                   class="no-gap team--media"
-                  src="images/john_doe_desk.jpg"
+                  src="images/john_doe_mobile.jpg"
+                  srcset="images/john_doe_mobile@2x.jpg 450w, images/john_doe_tab.jpg 354w, images/john_doe_tab@2x.jpg 354w, images/john_doe_desk.jpg 270w, images/john_doe_desk@2x.jpg 270w "
                   alt="Zdjęcie Product Designera"
-                  width="270"
-                  height="260"
-                />
+                  sizes="(min-width: 320px) 450px, (min-width:768px) 354w, (min-width: 1200px) 270w, 100vw"
+                  
+                /> -->
                 <figcaption>
                   <span class="team__name-title">John Doe</span>
                   <span class="team__subtitle">Product Designer</span>
@@ -304,13 +320,28 @@
 
             <li>
               <figure class="team__figure">
-                <img
+                <picture>
+                            <source srcset="
+                                            images/frontend_dev_mobile.jpg   1x,
+                                            images/frontend_dev_mobile@2x.jpg 2x
+                                          " media="(max-width: 767px)" />
+                            <source srcset="
+                                            images/frontend_dev_tab.jpg   1x,
+                                            images/frontend_dev_tab@2x.jpg 2x
+                                          " media="(max-width: 1199px)" />
+                            <source srcset="
+                                           images/frontend_dev_desk.jpg 1x,
+                                           images/frontend_dev_desk@2x.jpg x2
+                                          " media="(min-width: 1200px)" />
+                            <img class="no-gap team--media" src="images/frontend_dev_mobile.jpg" alt="Zdjęcie Frontend Developera" />
+                        </picture>
+                <!-- <img
                   class="no-gap team--media"
                   src="images/frontend_dev_desk.jpg"
                   alt="Zdjęcie Frontend Developera"
                   width="270"
                   height="260"
-                />
+                /> -->
                 <figcaption>
                   <span class="team__name-title">John Doe</span>
                   <span class="team__subtitle">Frontend Developer</span>
@@ -350,13 +381,28 @@
 
             <li>
               <figure class="team__figure">
-                <img
+                <picture>
+                            <source srcset="
+                                            images/marketing_mobile.jpg   1x,
+                                            images/marketing_mobile@2x.jpg 2x
+                                          " media="(max-width: 767px)" />
+                            <source srcset="
+                                            images/marketing_tab.jpg   1x,
+                                            images/marketing_tab@2x.jpg 2x
+                                          " media="(max-width: 1199px)" />
+                            <source srcset="
+                                           images/marketing_desk.jpg 1x,
+                                           images/marketing_desk@2x.jpg x2
+                                          " media="(min-width: 1200px)" />
+                            <img class="no-gap team--media" src="images/marketing_mobile.jpg" alt="Zdjęcie Pracownika Marketingu" />
+                        </picture>
+                <!-- <img
                   class="no-gap team--media"
                   src="images/marketing_desk.jpg"
                   alt="Zdjęcie Pracownika Marketingu"
                   width="270"
                   height="260"
-                />
+                /> -->
                 <figcaption>
                   <span class="team__name-title">John Doe</span>
                   <span class="team__subtitle">Marketing</span>
@@ -396,13 +442,28 @@
 
             <li>
               <figure class="team__figure">
-                <img
+                <picture>
+                            <source srcset="
+                                            images/UI_Designer_mobile.jpg   1x,
+                                            images/UI_Designer_mobile@2x.jpg 2x
+                                          " media="(max-width: 767px)" />
+                            <source srcset="
+                                            images/UI_Designer_tab.jpg   1x,
+                                            images/UI_Designer_tab@2x.jpg 2x
+                                          " media="(max-width: 1199px)" />
+                            <source srcset="
+                                           images/UI_Designer_desk.jpg 1x,
+                                           images/UI_Designer_desk@2x.jpg x2
+                                          " media="(min-width: 1200px)" />
+                            <img class="no-gap team--media" src="images/UI_Designer_mobile.jpg" alt="Zdjęcie UI Designera" />
+                        </picture>
+                <!-- <img
                   class="no-gap team--media"
                   src="images/UI_Designer_desk.jpg"
                   alt="Zdjęcie UI Designera"
                   width="270"
                   height="260"
-                />
+                /> -->
                 <figcaption>
                   <span class="team__name-title">John Doe</span>
                   <span class="team__subtitle">UI Designer</span>
@@ -441,9 +502,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="clients__title">Nasi klienci</h2>
           <ul class="clients__list">
@@ -479,10 +540,10 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section>
     </main>
 
-    <!-- <footer>
+    <footer>
       <div class="container">
         <div class="page-footer">
           <ul class="page-footer--tablet">
@@ -553,7 +614,7 @@
           </ul>
         </div>
       </div>
-    </footer> --> -->
+    </footer>
     <script src="./js/modal.js"></script>
     <script src="js/mobile-menu.js"></script>
   </body>

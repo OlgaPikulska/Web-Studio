@@ -1,12 +1,33 @@
 .js-menu-container {
-  width: 480px;
-  height: 796px;
-  border: 1px solid black;
+  width: 100vw;
+  height: 100vh;
+  border: none;
   padding-left: 40px;
   z-index: 999;
+  background: get-bg-color(basic-background);
+  transform: translateX(0);
+  visibility: hidden;
+  transition-property: transform, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.js-menu-container .is-open {
+  transform: translateX(100%);
+}
+.is-open {
+  visibility: visible;
 }
 .js-close-menu {
   background: get-bg-color(basic-background);
+}
+.js-open-menu {
+  background: get-bg-color(basic-background);
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .menu__button-icon {
   fill: get-color(dark-text);
@@ -79,4 +100,10 @@
   padding-left: 10px;
   padding-right: 10px;
   border-right: 1px solid #21212133;
+  &--first {
+    padding-left: 0px;
+  }
+  &--last {
+    border-right: none;
+  }
 }
