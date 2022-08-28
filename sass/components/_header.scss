@@ -83,7 +83,6 @@ header {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  // justify-content: space-around;
 }
 .contact__item {
   font-family: get-font(primary);
@@ -152,8 +151,6 @@ header {
   .menu__open-btn {
     width: 40px;
     height: 40px;
-    // margin-top: 10px;
-    // margin-bottom: 10px;
     background: get-bg-color(basic-background);
     fill: get-color(dark-text);
     &:hover,
