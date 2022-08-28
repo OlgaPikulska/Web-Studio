@@ -190,7 +190,7 @@ input:focus + .form__icon {
   justify-content: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .form__title {
     padding-left: 40px;
     padding-right: 40px;

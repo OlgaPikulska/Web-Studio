@@ -6,61 +6,6 @@
   margin: 0 auto;
   max-width: 1600px;
 }
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .intro__background {
-    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
-      url(../images/bg_mobile_480x400@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .intro__background {
-    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
-      url(../images/bg_mobile_480x400.jpg);
-  }
-}
-
-// @media screen and (min-device-pixel-ratio: 1),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx),
-//   screen and (min-width: 320px) and (max-width: 767px) {
-//   .intro__background {
-//     background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
-//       url(../images/bg_mobile_480x400.jpg);
-//     background-size: 480px 400px;
-//   }
-// }
-
-// nie wiem dlaczego to nie działa z pixel-ratio
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
-  .intro__background {
-    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
-      url(../images/bg_tablet_768x400@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .intro__background {
-    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
-      url(../images/bg_tablet_768x400.jpg);
-    // background-size: 768px 400px;
-    // max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .intro__background {
-    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
-      url(../images/bg_desktop_1600x600.jpg);
-    // background-size: 1600px 600px;
-  }
-}
-
 .intro {
   display: flex;
   flex-direction: column;
@@ -81,18 +26,6 @@
     width: 365px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .intro {
-    height: 600px;
-    &__title {
-      font-size: 44px;
-      line-height: 1.37;
-      padding-top: 200px;
-      width: 696px;
-    }
-  }
-}
-
 .intro__btn {
   font-family: get-font(primary);
   font-size: 16px;
@@ -113,5 +46,58 @@
 
   &:hover {
     transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .intro__background {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+      url(../images/bg_mobile_480x400.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .intro__background {
+      background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+        url(../images/bg_mobile_480x400@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .intro__background {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+      url(../images/bg_tablet_768x400.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .intro__background {
+      background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+        url(../images/bg_tablet_768x400@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro__background {
+    background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+      url(../images/bg_desktop_1600x600.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .intro__background {
+      background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+        url(../images/bg_desktop_1600x600@2x.jpg);
+    }
+  }
+  .intro {
+    height: 600px;
+    &__title {
+      font-size: 44px;
+      line-height: 1.37;
+      padding-top: 200px;
+      width: 696px;
+    }
   }
 }

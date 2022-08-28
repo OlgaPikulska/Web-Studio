@@ -33,7 +33,7 @@ body {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     max-width: 480px;
   }
@@ -175,9 +175,10 @@ header {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   header {
     height: 60px;
+    margin-bottom: 60px;
   }
   .nav {
     display: none;
@@ -204,6 +205,9 @@ header {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  header {
+    margin-bottom: 60px;
+  }
   .menu__open-btn {
     display: none;
   }
@@ -260,7 +264,7 @@ header {
   padding-bottom: 20px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .page-footer__logo {
     display: flex;
     justify-content: center;
@@ -286,31 +290,6 @@ header {
   max-width: 1600px;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .intro__background {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg_mobile_480x400@2x.jpg);
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .intro__background {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg_mobile_480x400.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
-  .intro__background {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg_tablet_768x400@2x.jpg);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .intro__background {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg_tablet_768x400.jpg);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .intro__background {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg_desktop_1600x600.jpg);
-  }
-}
 .intro {
   display: flex;
   flex-direction: column;
@@ -330,17 +309,6 @@ header {
   width: 365px;
 }
 
-@media screen and (min-width: 1200px) {
-  .intro {
-    height: 600px;
-  }
-  .intro__title {
-    font-size: 44px;
-    line-height: 1.37;
-    padding-top: 200px;
-    width: 696px;
-  }
-}
 .intro__btn {
   font-family: "Roboto";
   font-size: 16px;
@@ -363,6 +331,47 @@ header {
   transform: scale(1.1);
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .intro__background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg_mobile_480x400.jpg);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .intro__background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg_mobile_480x400@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .intro__background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg_tablet_768x400.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .intro__background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg_tablet_768x400@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .intro__background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg_desktop_1600x600.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .intro__background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg_desktop_1600x600@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .intro {
+    height: 600px;
+  }
+  .intro__title {
+    font-size: 44px;
+    line-height: 1.37;
+    padding-top: 200px;
+    width: 696px;
+  }
+}
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -622,7 +631,7 @@ input:focus + .form__icon {
   justify-content: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .form__title {
     padding-left: 40px;
     padding-right: 40px;
@@ -700,7 +709,7 @@ input:focus + .form__icon {
   justify-content: flex-end;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .widgets__background {
     margin-top: 30px;
     width: 450px;
@@ -805,7 +814,7 @@ input:focus + .form__icon {
   z-index: 2;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .gallery {
     display: none;
   }
@@ -888,7 +897,7 @@ input:focus + .form__icon {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .section {
     padding-bottom: 60px;
     padding-top: 60px;
@@ -1018,7 +1027,7 @@ input:focus + .form__icon {
   height: 43.96px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .clients__icons {
     width: 210px;
   }
@@ -1170,7 +1179,7 @@ input:-webkit-autofill {
   padding: 10px 24px 10px 0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .page-footer {
     display: block;
   }
@@ -1321,7 +1330,7 @@ input:-webkit-autofill {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275), 0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725), 0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .buttons {
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1433,7 +1442,7 @@ input:-webkit-autofill {
   transform: translateY(0);
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .grid {
     display: block;
   }
@@ -1477,7 +1486,7 @@ input:-webkit-autofill {
   transition-timing-function: ease-in-out;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 .js-menu-container .is-open {
