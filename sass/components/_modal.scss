@@ -17,38 +17,22 @@
 
 .modal__box {
   height: 609px;
-  width: 450px;
+  max-width: 450px;
   border-radius: 4px;
   background-color: get-bg-color(basic-background);
   display: flex;
   flex-direction: column;
   position: absolute;
+  padding-left: 40px;
+  padding-right: 40px;
 
   transition-property: transform;
   transition-duration: 600ms;
   transition-timing-function: linear;
   transform: scale(1);
-}
-
-.modal__close-btn {
-  background-color: get-bg-color(basic-background);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: get-color(dark-text);
-  cursor: pointer;
-  margin-top: 8px;
-  margin-right: 8px;
-  margin-left: 412px;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform, background-color, color;
-
-  &:hover {
-    transform: scale(1.1);
-    background-color: get-color(action);
-    color: get-color(light-text);
+  @media screen and (min-width: 1200px) {
+    height: 581px;
+    max-width: 528px;
   }
 }
 
@@ -64,12 +48,27 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .modal__box {
-    height: 581px;
-    width: 528px;
-  }
-  .modal__close-btn {
-    margin-left: 490px;
+.modal__close-btn {
+  background-color: get-bg-color(basic-background);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform, background-color, fill;
+
+  &:hover {
+    background-color: get-color(action);
+    fill: get-color(light-text);
   }
 }

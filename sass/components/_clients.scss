@@ -6,7 +6,14 @@
   letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+  }
 }
+
 .clients__list {
   display: flex;
   flex-direction: row;
@@ -14,8 +21,9 @@
   justify-content: center;
   gap: 30px;
 }
+
 .clients__icons {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid get-color(icon-nonaction);
   border-radius: 4px;
@@ -27,6 +35,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border, fill;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 
   &:focus,
   &:hover {
@@ -60,22 +74,4 @@
 .clients__icons--Logo6 {
   width: 93.79px;
   height: 43.96px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .clients__icons {
-    width: 210px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients__icons {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients__title {
-    font-size: 36px;
-    line-height: 1.17;
-    padding-bottom: 50px;
-  }
 }

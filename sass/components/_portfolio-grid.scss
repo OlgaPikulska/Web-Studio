@@ -31,6 +31,24 @@
   margin-top: 0px;
   margin-bottom: 94px;
   gap: 30px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .grid:nth-child(1) {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .grid:nth-child(1),
+  .grid:nth-child(2) {
+    margin-top: 40px;
+  }
 }
 
 .grid__box {
@@ -43,9 +61,26 @@
   transition-property: box-shadow;
   overflow: hidden;
   position: relative;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 450px;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
 
   &:hover {
     box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+  }
+}
+
+.grid--media {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
   }
 }
 
@@ -56,10 +91,6 @@
   border-bottom: 1px solid #eeeeee;
   position: relative;
   background-color: get-bg-color(basic-background);
-}
-
-.no-gap {
-  display: block;
 }
 
 .grid__text {
@@ -93,35 +124,4 @@
 
 .grid__box:hover .grid__label {
   transform: translateY(0);
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .grid {
-    display: block;
-  }
-  .grid__box {
-    width: 450px;
-    margin-top: 30px;
-  }
-  .grid--media {
-    width: 450px;
-  }
-  .grid:nth-child(1) {
-    margin-top: 40px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .grid {
-    justify-content: flex-start;
-  }
-  .grid__box {
-    width: 354px;
-  }
-  .grid--media {
-    width: 354px;
-  }
-  .grid:nth-child(1),
-  .grid:nth-child(2) {
-    margin-top: 40px;
-  }
 }

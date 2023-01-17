@@ -14,87 +14,66 @@
     />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
-  <body class="center">
-    <header>
-      <div class="container page-header">
+  <body>
+    <header class="container">
+      <div class="page-header">
         <h2 class="page-header__logo">
           <a href="index.html" class="logo">Web<span class="logo--header">Studio</span> </a>
         </h2>
-        <nav>
+  
           <ul class="nav">
             <li><a href="index.html" class="nav__item nav__item--active">Agencja</a></li>
             <li>
               <a href="portfolio.html" class="nav__item">Portfolio</a>
             </li>
-            <li><a href="/Kontakt" class="nav__item">Kontakt</a></li>
+            <li><a href="#pageFooterContact" class="nav__item">Kontakt</a></li>
           </ul>
-        </nav>
-        <div>
+        
           <ul class="contact">
             <li>
               <a href="mailto:info@devstudio.com" class="contact__item contact__item--mail">
                 <svg class="contact__icon-mail">
                   <use href="images/icons.svg#icon-envelope"></use>
                 </svg>
-                info@devstudio.com</a>
+                info@devstudio.com</a
+              >
             </li>
             <li>
               <a href="tel:+48111111111" class="contact__item contact__item--tel">
                 <svg class="contact__icon-tel">
                   <use href="images/icons.svg#icon-smartphone"></use>
                 </svg>
-                +48 111 111 111</a>
-            </li>
-          </ul>
-        </div>
-        <button type="button" class="js-open-menu"><svg class="menu__open-btn"><use href="images/icons.svg#icon-menu_40px"></use></svg></button>
-      </div>
-
-        <!-- MENU MOBILE -->
-          <div class="js-menu-container">
-          <button type="button" class="js-close-menu"><svg class="menu__button-icon"><use href="images/icons.svg#icon-close_24px"></svg></button>
-        <nav>
-          <ul class="mobile-nav">
-            <li><a href="index.html" class="mobile-nav__item">Agencja</a></li>
-            <li><a href="portfolio.html" class="mobile-nav__item">Portfolio</a></li>
-            <li><a href="/Kontakt" class="mobile-nav__item">Kontakt</a></li>
-          </ul>
-        </nav>
-        <div>
-          <ul>
-            <li>
-              <a href="tel:+48111111111" class="menu__contact menu__contact--tel">
-                +48 111 111 111</a>
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="menu__contact menu__contact--mail">
-                info@devstudio.com</a
+                +48 111 111 111</a
               >
-            </li></ul>
-        </div>
-        <ul class="menu__socials">
-          <li><a href="#" class="menu__socials--item menu__socials--item--first">Instagram</a></li>
-          <li><a href="#" class="menu__socials--item">Twitter</a></li>
-          <li><a href="#" class="menu__socials--item">Facebook</a></li>
-          <li><a href="#" class="menu__socials--item menu__socials--item--last">LinkedIn</a></li>
-        </ul>
-        </div>
-      </div>   
+            </li>
+          </ul>
+       
+        <button type="button" class="js-open-menu">
+          <svg class="menu__open-btn"><use href="images/icons.svg#icon-menu_40px"></use></svg>
+        </button>
+      </div>
     </header>
 
     <main>
-       <section class="intro__background">
-         <div class="container">
+      <section class="intro__background">
+        <div class="container">
           <div class="intro">
             <h1 class="intro__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
             <button type="button" class="intro__btn" data-modal-open>Zamów usługę</button>
-          </div> 
+          </div>
 
           <div class="backdrop is-hidden" data-modal>
             <div class="modal__box">
-              <button type="button" class="modal__close-btn" data-modal-close>X</button>
+
+              <button type="button" class="modal__close-btn" data-modal-close>
+                <svg>
+                  <use xlink:href="images/icons.svg#icon-close_24px"></use>
+                </svg>
+              </button>
+
               <h2 class="form__title">Zostaw swoje dane w formularzu poniżej</h2>
-              <form name="signup_form" autocomplete="on">
+
+              <form name="signup_form" autocomplete="on" class="modal__form">
                 <label>
                   <span class="form__text">Imię</span>
                   <input type="text" name="name" class="form__box" />
@@ -147,23 +126,21 @@
                   </span>
                 </label>
 
-                <div class="modal__form__btn">
-                  <button type="submit" class="form__btn">Wyślij</button>
-                </div>
+                <button type="submit" class="form__btn">Wyślij</button>
+                
               </form>
             </div>
           </div>
         </div>
       </section>
+
       <section class="section section--widgets">
         <div class="container">
           <ul class="widgets">
             <li>
-              <div class="widgets__background">
-                <svg class="widgets__size">
-                  <use href="images/icons.svg#icon-a1_antenna"></use>
+                <svg class="widgets__background">
+                  <use href="images/icons.svg#icon-a1_antenna" class="widgets__size"></use>
                 </svg>
-              </div>
               <h2 class="widgets__title">LOREM IPSUM</h2>
               <p class="widgets__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -172,11 +149,9 @@
             </li>
 
             <li>
-              <div class="widgets__background">
-                <svg class="widgets__size">
-                  <use href="images/icons.svg#icon-a2_clock"></use>
+                <svg class="widgets__background" >
+                  <use href="images/icons.svg#icon-a2_clock" class="widgets__size"></use>
                 </svg>
-              </div>
               <h2 class="widgets__title">LOREM IPSUM</h2>
               <p class="widgets__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -184,11 +159,9 @@
               </p>
             </li>
             <li>
-              <div class="widgets__background">
-                <svg class="widgets__size">
-                  <use href="images/icons.svg#icon-a3_diagram"></use>
+                <svg class="widgets__background">
+                  <use href="images/icons.svg#icon-a3_diagram" class="widgets__size"></use>
                 </svg>
-              </div>
               <h2 class="widgets__title">LOREM IPSUM</h2>
               <p class="widgets__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -196,11 +169,9 @@
               </p>
             </li>
             <li>
-              <div class="widgets__background">
-                <svg class="widgets__size">
-                  <use href="images/icons.svg#icon-a4_astronaut"></use>
+                <svg class="widgets__background">
+                  <use href="images/icons.svg#icon-a4_astronaut" class="widgets__size"></use>
                 </svg>
-              </div>
               <h2 class="widgets__title">LOREM IPSUM</h2>
               <p class="widgets__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -219,7 +190,10 @@
               <img
                 src="images/czym_się_zajmujemy/aplikacje_komputerowe.jpg"
                 alt="Ręce mężczyzny, który używa klawiatury"
-                srcset="images/czym_się_zajmujemy/aplikacje_komputerowe.jpg 1x,images/czym_się_zajmujemy/aplikacje_komputerowe@2x.jpg 2x"
+                srcset="
+                  images/czym_się_zajmujemy/aplikacje_komputerowe.jpg    1x,
+                  images/czym_się_zajmujemy/aplikacje_komputerowe@2x.jpg 2x
+                "
                 width="370"
                 height="294"
               />
@@ -232,7 +206,10 @@
               <img
                 src="images/czym_się_zajmujemy/aplikacje_mobilne.jpg"
                 alt="Kobieta pracująca przy komputerze, która dodatkowo trzyma w ręce telefon"
-                srcset="images/czym_się_zajmujemy/aplikacje_mobilne.jpg 1x, images/czym_się_zajmujemy/aplikacje_mobilne@2x.jpg 2x"
+                srcset="
+                  images/czym_się_zajmujemy/aplikacje_mobilne.jpg    1x,
+                  images/czym_się_zajmujemy/aplikacje_mobilne@2x.jpg 2x
+                "
                 width="370"
                 height="294"
               />
@@ -245,7 +222,10 @@
               <img
                 src="images/czym_się_zajmujemy/rozwiązania_graficzne.jpg"
                 alt="Tablet z kolorowym obrazkiem na wyświetlaczu"
-                srcset="images/czym_się_zajmujemy/rozwiązania_graficzne.jpg 1x, images/czym_się_zajmujemy/rozwiązania_graficzne@2x.jpg 2x"
+                srcset="
+                  images/czym_się_zajmujemy/rozwiązania_graficzne.jpg    1x,
+                  images/czym_się_zajmujemy/rozwiązania_graficzne@2x.jpg 2x
+                "
                 width="370"
                 height="294"
               />
@@ -262,20 +242,24 @@
             <li>
               <figure class="team__figure">
                 <picture>
-                            <source srcset="
-                                            images/john_doe_mobile.jpg   1x,
-                                            images/john_doe_mobile@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/john_doe_tab.jpg   1x,
-                                            images/john_doe_tab@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/john_doe_desk.jpg 1x,
-                                           images/john_doe_desk@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap team--media" src="images/john_doe_mobile.jpg" alt="Zdjęcie Product Designera" />
-                        </picture>
+                  <source
+                    srcset="images/john_doe_mobile.jpg 1x, images/john_doe_mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="images/john_doe_tab.jpg 1x, images/john_doe_tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="images/john_doe_desk.jpg 1x, images/john_doe_desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="no-gap team--media"
+                    src="images/john_doe_mobile.jpg"
+                    alt="Zdjęcie Product Designera"
+                  />
+                </picture>
                 <figcaption>
                   <span class="team__name-title">John Doe</span>
                   <span class="team__subtitle">Product Designer</span>
@@ -316,20 +300,24 @@
             <li>
               <figure class="team__figure">
                 <picture>
-                            <source srcset="
-                                            images/frontend_dev_mobile.jpg   1x,
-                                            images/frontend_dev_mobile@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/frontend_dev_tab.jpg   1x,
-                                            images/frontend_dev_tab@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/frontend_dev_desk.jpg 1x,
-                                           images/frontend_dev_desk@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap team--media" src="images/frontend_dev_mobile.jpg" alt="Zdjęcie Frontend Developera" />
-                        </picture>
+                  <source
+                    srcset="images/frontend_dev_mobile.jpg 1x, images/frontend_dev_mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="images/frontend_dev_tab.jpg 1x, images/frontend_dev_tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="images/frontend_dev_desk.jpg 1x, images/frontend_dev_desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="no-gap team--media"
+                    src="images/frontend_dev_mobile.jpg"
+                    alt="Zdjęcie Frontend Developera"
+                  />
+                </picture>
                 <figcaption>
                   <span class="team__name-title">John Doe</span>
                   <span class="team__subtitle">Frontend Developer</span>
@@ -370,20 +358,24 @@
             <li>
               <figure class="team__figure">
                 <picture>
-                            <source srcset="
-                                            images/marketing_mobile.jpg   1x,
-                                            images/marketing_mobile@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/marketing_tab.jpg   1x,
-                                            images/marketing_tab@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/marketing_desk.jpg 1x,
-                                           images/marketing_desk@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap team--media" src="images/marketing_mobile.jpg" alt="Zdjęcie Pracownika Marketingu" />
-                        </picture>
+                  <source
+                    srcset="images/marketing_mobile.jpg 1x, images/marketing_mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="images/marketing_tab.jpg 1x, images/marketing_tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="images/marketing_desk.jpg 1x, images/marketing_desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="no-gap team--media"
+                    src="images/marketing_mobile.jpg"
+                    alt="Zdjęcie Pracownika Marketingu"
+                  />
+                </picture>
                 <figcaption>
                   <span class="team__name-title">John Doe</span>
                   <span class="team__subtitle">Marketing</span>
@@ -424,20 +416,24 @@
             <li>
               <figure class="team__figure">
                 <picture>
-                            <source srcset="
-                                            images/UI_Designer_mobile.jpg   1x,
-                                            images/UI_Designer_mobile@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/UI_Designer_tab.jpg   1x,
-                                            images/UI_Designer_tab@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/UI_Designer_desk.jpg 1x,
-                                           images/UI_Designer_desk@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap team--media" src="images/UI_Designer_mobile.jpg" alt="Zdjęcie UI Designera" />
-                        </picture>
+                  <source
+                    srcset="images/UI_Designer_mobile.jpg 1x, images/UI_Designer_mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="images/UI_Designer_tab.jpg 1x, images/UI_Designer_tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="images/UI_Designer_desk.jpg 1x, images/UI_Designer_desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="no-gap team--media"
+                    src="images/UI_Designer_mobile.jpg"
+                    alt="Zdjęcie UI Designera"
+                  />
+                </picture>
                 <figcaption>
                   <span class="team__name-title">John Doe</span>
                   <span class="team__subtitle">UI Designer</span>
@@ -517,20 +513,20 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="pageFooterContact">
       <div class="container">
         <div class="page-footer">
-          <ul class="page-footer--tablet">
-            <li class="tablet--section">
-              <section>
+          
+                <div>
                 <h2 class="page-footer__logo">
                   <a href="index.html" class="logo">Web<span class="logo--footer">Studio</span></a>
                 </h2>
                 <address class="page-footer__address">m. Warszawa, Aleje Jerozolimskie 21</address>
                 <a href="mailto:info@example.com" class="page-footer__contact">info@example.com</a>
                 <a href="tel:+48111111111" class="page-footer__contact">+48 111 111 111</a>
-              </section>
-              <section class="page-footer__section">
+                </div>
+              
+              <div class="page-footer__social-section">
                 <h4 class="page-footer__title">Dołącz do nas</h4>
                 <ul class="socials page-footer__socials">
                   <li>
@@ -562,20 +558,19 @@
                     </a>
                   </li>
                 </ul>
-              </section>
-            </li>
-            <li>
-              <section class="newsletter">
+              </div>
+
+              <div class="newsletter">
                 <h4 class="page-footer__title">Zapisz się do newslettera</h4>
                 <form name="signup_form" autocomplete="on" novalidate class="newsletter__form">
-                  <label>
+                 
                     <input
                       type="email"
                       name="E-mail"
                       placeholder="E-mail"
                       class="newsletter__input"
                     />
-                  </label>
+                  
                   <button type="submit" class="newsletter__btn">
                     <span class="newsletter__btn-text">Zapisz się</span>
                     <svg class="newsletter__btn-icon">
@@ -583,12 +578,41 @@
                     </svg>
                   </button>
                 </form>
-              </section>
-            </li>
-          </ul>
+              </div>
+            
         </div>
       </div>
     </footer>
+    <!-- MENU MOBILE -->
+          <div class="js-menu-container">
+          <button type="button" class="js-close-menu"><svg class="menu__button-icon"><use href="images/icons.svg#icon-close_24px"></svg></button>
+        <nav>
+          <ul class="mobile-nav">
+            <li><a href="index.html" class="mobile-nav__item">Agencja</a></li>
+            <li><a href="portfolio.html" class="mobile-nav__item">Portfolio</a></li>
+            <li><a href="/Kontakt" class="mobile-nav__item">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul>
+            <li>
+              <a href="tel:+48111111111" class="menu__contact menu__contact--tel">
+                +48 111 111 111</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="menu__contact menu__contact--mail">
+                info@devstudio.com</a
+              >
+            </li></ul>
+        </div>
+        <ul class="menu__socials">
+          <li><a href="#" class="menu__socials--item menu__socials--item--first">Instagram</a></li>
+          <li><a href="#" class="menu__socials--item">Twitter</a></li>
+          <li><a href="#" class="menu__socials--item">Facebook</a></li>
+          <li><a href="#" class="menu__socials--item menu__socials--item--last">LinkedIn</a></li>
+        </ul>
+        </div>
+        
     <script src="./js/modal.js"></script>
     <script src="js/mobile-menu.js"></script>
   </body>

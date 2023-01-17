@@ -1,3 +1,40 @@
+.section--widgets {
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+    padding-top: 94px;
+  }
+}
+
+.widgets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+.widgets > li {
+  max-width: 450px;
+}
 .widgets__background {
   border-radius: 4px;
   height: 120px;
@@ -5,6 +42,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 30px;
+  width: 100%;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    max-width: 270px;
+  }
 }
 .widgets__size {
   width: 70px;
@@ -17,16 +65,25 @@
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: left;
+  max-width: 450px;
+  text-align: center;
+  justify-content: center;
   display: flex;
-  justify-content: flex-start;
-  width: 270px;
   padding-top: 30px;
   padding-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    text-align: left;
+    justify-content: flex-start;
+  }
 }
 
 .widgets__text {
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -35,63 +92,13 @@
   color: get-color(contact);
   display: flex;
   justify-content: flex-end;
-}
+  max-width: 450px;
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .widgets__background {
-    margin-top: 30px;
-    width: 450px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
   }
-  .widgets__title {
-    width: 450px;
-    text-align: center;
-    justify-content: center;
-  }
-  .widgets__text {
-    width: 450px;
-  }
-  .section--widgets {
-    padding-top: 30px;
-    padding-bottom: 60px;
-  }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .widgets__background {
-    width: 354px;
-  }
-  .widgets {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  .widgets__text {
-    width: 354px;
-  }
-  .section--widgets {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .widgets__background {
-    width: 270px;
-  }
-  // czy da się jakoś inaczej zapisać, żeby to widgets się dziedziczyło z tabletu
-  .widgets {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  .section--widgets {
-    padding-bottom: 0px;
-  }
-  .widgets__text {
-    width: 270px;
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
   }
 }

@@ -14,71 +14,43 @@
     />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
-  <body class="center">
-    <header>
-      <div class="container page-header">
+  <body>
+    <header class="container">
+      <div class="page-header">
         <h2 class="page-header__logo">
           <a href="index.html" class="logo">Web<span class="logo--header">Studio</span> </a>
         </h2>
-        <nav>
-          <ul class="nav">
-            <li><a href="index.html" class="nav__item nav__item--active">Agencja</a></li>
-            <li>
-              <a href="portfolio.html" class="nav__item">Portfolio</a>
-            </li>
-            <li><a href="/Kontakt" class="nav__item">Kontakt</a></li>
-          </ul>
-        </nav>
-        <div>
-          <ul class="contact">
-            <li>
-              <a href="mailto:info@devstudio.com" class="contact__item contact__item--mail">
-                <svg class="contact__icon-mail">
-                  <use href="images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a>
-            </li>
-            <li>
-              <a href="tel:+48111111111" class="contact__item contact__item--tel">
-                <svg class="contact__icon-tel">
-                  <use href="images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +48 111 111 111</a>
-            </li>
-          </ul>
-        </div>
-        <button type="button" class="js-open-menu"><svg class="menu__open-btn"><use href="images/icons.svg#icon-menu_40px"></use></svg></button>
-      </div>
 
-        <!-- MENU MOBILE -->
-          <div class="js-menu-container">
-          <button type="button" class="js-close-menu"><svg class="menu__button-icon"><use href="images/icons.svg#icon-close_24px"></svg></button>
-        <nav>
-          <ul class="mobile-nav">
-            <li><a href="index.html" class="mobile-nav__item">Agencja</a></li>
-            <li><a href="portfolio.html" class="mobile-nav__item">Portfolio</a></li>
-            <li><a href="/Kontakt" class="mobile-nav__item">Kontakt</a></li>
-          </ul>
-        </nav>
-        <div>
-          <ul>
-            <li>
-              <a href="tel:+48111111111" class="menu__contact menu__contact--tel">
-                +48 111 111 111</a>
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="menu__contact menu__contact--mail">
-                info@devstudio.com</a
-              >
-            </li></ul>
-        </div>
-        <ul class="menu__socials">
-          <li><a href="#" class="menu__socials--item menu__socials--item--first">Instagram</a></li>
-          <li><a href="#" class="menu__socials--item">Twitter</a></li>
-          <li><a href="#" class="menu__socials--item">Facebook</a></li>
-          <li><a href="#" class="menu__socials--item menu__socials--item--last">LinkedIn</a></li>
+        <ul class="nav">
+          <li><a href="index.html" class="nav__item">Agencja</a></li>
+          <li>
+            <a href="portfolio.html" class="nav__item nav__item--active">Portfolio</a>
+          </li>
+          <li><a href="#pageFooterContact" class="nav__item">Kontakt</a></li>
         </ul>
-        </div>
+
+        <ul class="contact">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact__item contact__item--mail">
+              <svg class="contact__icon-mail">
+                <use href="images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+48111111111" class="contact__item contact__item--tel">
+              <svg class="contact__icon-tel">
+                <use href="images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </li>
+        </ul>
+
+        <button type="button" class="js-open-menu">
+          <svg class="menu__open-btn"><use href="images/icons.svg#icon-menu_40px"></use></svg>
+        </button>
       </div>
     </header>
     <main>
@@ -101,20 +73,33 @@
           <li>
             <figure class="grid__box">
               <picture>
-                            <source srcset="
-                                            images/portfolio_mobile/Technocrack_mobile_450x294.jpg   1x,
-                                            images/portfolio_mobile/Technocrack_mobile_450x294@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/portfolio_tab/technocrack_tab_354x294.jpg   1x,
-                                            images/portfolio_tab/technocrack_tab_354x294@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/portfolio_desk/Technocrack_desk_370x294.jpg 1x,
-                                           images/portfolio_desk/Technocrack_desk_370x294@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap grid--media" src="images/portfolio_mobile/Technocrack_mobile_450x294.jpg" alt="Widok przykładowej strony na laptopie" />
-                        </picture>
+                <source
+                  srcset="
+                    images/portfolio_mobile/Technocrack_mobile_450x294.jpg    1x,
+                    images/portfolio_mobile/Technocrack_mobile_450x294@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_tab/technocrack_tab_354x294.jpg    1x,
+                    images/portfolio_tab/technocrack_tab_354x294@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_desk/Technocrack_desk_370x294.jpg    1x,
+                    images/portfolio_desk/Technocrack_desk_370x294@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="no-gap grid--media"
+                  src="images/portfolio_mobile/Technocrack_mobile_450x294.jpg"
+                  alt="Widok przykładowej strony na laptopie"
+                />
+              </picture>
               <div class="grid__label">
                 <p class="grid__text">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -132,20 +117,33 @@
           <li>
             <figure class="grid__box">
               <picture>
-                            <source srcset="
-                                            images/portfolio_mobile/New_Orlean_vs_Golden_Star_mobile_450x294.jpg   1x,
-                                            images/portfolio_mobile/New_Orlean_vs_Golden_Star_mobile_450x294@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/portfolio_tab/Grafika_New_Orlean_vs_Golden_Star_tab_354x294.jpg   1x,
-                                            images/portfolio_tab/Grafika_New_Orlean_vs_Golden_Star_tab_354x294@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/portfolio_desk/Grafika_New_Orlean_vs_Golden_Star_desk_370x294.jpg 1x,
-                                           images/portfolio_desk/Grafika_New_Orlean_vs_Golden_Star_desk_370x294@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap grid--media" src="images/portfolio_mobile/New_Orlean_vs_Golden_Star_mobile_450x294.jpg" alt="Koszykarze" />
-                        </picture>
+                <source
+                  srcset="
+                    images/portfolio_mobile/New_Orlean_vs_Golden_Star_mobile_450x294.jpg    1x,
+                    images/portfolio_mobile/New_Orlean_vs_Golden_Star_mobile_450x294@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_tab/Grafika_New_Orlean_vs_Golden_Star_tab_354x294.jpg    1x,
+                    images/portfolio_tab/Grafika_New_Orlean_vs_Golden_Star_tab_354x294@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_desk/Grafika_New_Orlean_vs_Golden_Star_desk_370x294.jpg    1x,
+                    images/portfolio_desk/Grafika_New_Orlean_vs_Golden_Star_desk_370x294@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="no-gap grid--media"
+                  src="images/portfolio_mobile/New_Orlean_vs_Golden_Star_mobile_450x294.jpg"
+                  alt="Koszykarze"
+                />
+              </picture>
               <div class="grid__label">
                 <p class="grid__text">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -163,20 +161,33 @@
           <li>
             <figure class="grid__box">
               <picture>
-                            <source srcset="
-                                            images/portfolio_mobile/Restauracja_Seafood_mobile_450x294.jpg   1x,
-                                            images/portfolio_mobile/Restauracja_Seafood_mobile_450x294@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/portfolio_tab/Restauracja_Seafood_tab_354x294.jpg   1x,
-                                            images/portfolio_tab/Restauracja_Seafood_tab_354x294@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/portfolio_desk/Restauracja_Seafood_desk_370x294.jpg 1x,
-                                           images/portfolio_desk/Restauracja_Seafood_desk_370x294@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap grid--media" src="images/portfolio_mobile/Restauracja_Seafood_mobile_450x294.jpg" alt="Logo restauracji przedstawiające rybę" />
-                        </picture>
+                <source
+                  srcset="
+                    images/portfolio_mobile/Restauracja_Seafood_mobile_450x294.jpg    1x,
+                    images/portfolio_mobile/Restauracja_Seafood_mobile_450x294@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_tab/Restauracja_Seafood_tab_354x294.jpg    1x,
+                    images/portfolio_tab/Restauracja_Seafood_tab_354x294@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_desk/Restauracja_Seafood_desk_370x294.jpg    1x,
+                    images/portfolio_desk/Restauracja_Seafood_desk_370x294@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="no-gap grid--media"
+                  src="images/portfolio_mobile/Restauracja_Seafood_mobile_450x294.jpg"
+                  alt="Logo restauracji przedstawiające rybę"
+                />
+              </picture>
               <div class="grid__label">
                 <p class="grid__text">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -194,20 +205,33 @@
           <li>
             <figure class="grid__box">
               <picture>
-                            <source srcset="
-                                            images/portfolio_mobile/Projekt_Prime_mobile_450x294.jpg   1x,
-                                            images/portfolio_mobile/Projekt_Prime_mobile_450x294@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/portfolio_tab/Projekt_Prime_tab_354x294.jpg   1x,
-                                            images/portfolio_tab/Projekt_Prime_tab_354x294@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/portfolio_desk/Projekt_Prime_desk_370x294.jpg 1x,
-                                           images/portfolio_desk/Projekt_Prime_desk_370x294@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap grid--media" src="images/portfolio_mobile/Projekt_Prime_mobile_450x294.jpg" alt="Czarne duże słuchawki bezprzewodowe na białym tle" />
-                        </picture>
+                <source
+                  srcset="
+                    images/portfolio_mobile/Projekt_Prime_mobile_450x294.jpg    1x,
+                    images/portfolio_mobile/Projekt_Prime_mobile_450x294@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_tab/Projekt_Prime_tab_354x294.jpg    1x,
+                    images/portfolio_tab/Projekt_Prime_tab_354x294@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_desk/Projekt_Prime_desk_370x294.jpg    1x,
+                    images/portfolio_desk/Projekt_Prime_desk_370x294@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="no-gap grid--media"
+                  src="images/portfolio_mobile/Projekt_Prime_mobile_450x294.jpg"
+                  alt="Czarne duże słuchawki bezprzewodowe na białym tle"
+                />
+              </picture>
               <div class="grid__label">
                 <p class="grid__text">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -225,20 +249,33 @@
           <li>
             <figure class="grid__box">
               <picture>
-                            <source srcset="
-                                            images/portfolio_mobile/Projekt_Boxes_mobile_450x294.jpg   1x,
-                                            images/portfolio_mobile/Projekt_Boxes_mobile_450x294@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/portfolio_tab/Projekt_Boxes_tab_354x294.jpg   1x,
-                                            images/portfolio_tab/Projekt_Boxes_tab_354x294@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/portfolio_desk/Projekt_Boxes_desk_370x294.jpg 1x,
-                                           images/portfolio_desk/Projekt_Boxes_desk_370x294@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap grid--media" src="images/portfolio_mobile/Projekt_Boxes_mobile_450x294.jpg" alt="Dwa pudełka: białe i pomarańczowe na białym tle" />
-                        </picture>
+                <source
+                  srcset="
+                    images/portfolio_mobile/Projekt_Boxes_mobile_450x294.jpg    1x,
+                    images/portfolio_mobile/Projekt_Boxes_mobile_450x294@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_tab/Projekt_Boxes_tab_354x294.jpg    1x,
+                    images/portfolio_tab/Projekt_Boxes_tab_354x294@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_desk/Projekt_Boxes_desk_370x294.jpg    1x,
+                    images/portfolio_desk/Projekt_Boxes_desk_370x294@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="no-gap grid--media"
+                  src="images/portfolio_mobile/Projekt_Boxes_mobile_450x294.jpg"
+                  alt="Dwa pudełka: białe i pomarańczowe na białym tle"
+                />
+              </picture>
               <div class="grid__label">
                 <p class="grid__text">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -256,20 +293,33 @@
           <li>
             <figure class="grid__box">
               <picture>
-                            <source srcset="
-                                            images/portfolio_mobile/Inspiration_has_no_Borders_mobile_450x294.jpg   1x,
-                                            images/portfolio_mobile/Inspiration_has_no_Borders_mobile_450x294@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/portfolio_tab/Inspiration_has_no_Borders_tab_354x294.jpg   1x,
-                                            images/portfolio_tab/Inspiration_has_no_Borders_tab_354x294@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/portfolio_desk/Inspiration_has_no_Borders_desk_370x294.jpg 1x,
-                                           images/portfolio_desk/Inspiration_has_no_Borders_desk_370x294@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap grid--media" src="images/portfolio_mobile/Inspiration_has_no_Borders_mobile_450x294.jpg" alt="Monitor Mac z otwartą czarną stroną internetową" />
-                        </picture>
+                <source
+                  srcset="
+                    images/portfolio_mobile/Inspiration_has_no_Borders_mobile_450x294.jpg    1x,
+                    images/portfolio_mobile/Inspiration_has_no_Borders_mobile_450x294@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_tab/Inspiration_has_no_Borders_tab_354x294.jpg    1x,
+                    images/portfolio_tab/Inspiration_has_no_Borders_tab_354x294@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_desk/Inspiration_has_no_Borders_desk_370x294.jpg    1x,
+                    images/portfolio_desk/Inspiration_has_no_Borders_desk_370x294@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="no-gap grid--media"
+                  src="images/portfolio_mobile/Inspiration_has_no_Borders_mobile_450x294.jpg"
+                  alt="Monitor Mac z otwartą czarną stroną internetową"
+                />
+              </picture>
               <div class="grid__label">
                 <p class="grid__text">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -287,20 +337,33 @@
           <li>
             <figure class="grid__box">
               <picture>
-                            <source srcset="
-                                            images/portfolio_mobile/Magazyn_Limited_Edition_mobile_450x294.jpg   1x,
-                                            images/portfolio_mobile/Magazyn_Limited_Edition_mobile_450x294@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/portfolio_tab/Magazyn_Limited_Edition_tab_354x294.jpg   1x,
-                                            images/portfolio_tab/Magazyn_Limited_Edition_tab_354x294@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/portfolio_desk/Magazyn_Limited_Edition_desk_370x294.jpg 1x,
-                                           images/portfolio_desk/Magazyn_Limited_Edition_desk_370x294@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap grid--media" src="images/portfolio_mobile/Magazyn_Limited_Edition_mobile_450x294.jpg" alt="Otwarta książka na białym tle" />
-                        </picture>
+                <source
+                  srcset="
+                    images/portfolio_mobile/Magazyn_Limited_Edition_mobile_450x294.jpg    1x,
+                    images/portfolio_mobile/Magazyn_Limited_Edition_mobile_450x294@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_tab/Magazyn_Limited_Edition_tab_354x294.jpg    1x,
+                    images/portfolio_tab/Magazyn_Limited_Edition_tab_354x294@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_desk/Magazyn_Limited_Edition_desk_370x294.jpg    1x,
+                    images/portfolio_desk/Magazyn_Limited_Edition_desk_370x294@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="no-gap grid--media"
+                  src="images/portfolio_mobile/Magazyn_Limited_Edition_mobile_450x294.jpg"
+                  alt="Otwarta książka na białym tle"
+                />
+              </picture>
               <div class="grid__label">
                 <p class="grid__text">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -318,20 +381,33 @@
           <li>
             <figure class="grid__box">
               <picture>
-                            <source srcset="
-                                            images/portfolio_mobile/Projekt_LAB_mobile_450x294.jpg   1x,
-                                            images/portfolio_mobile/Projekt_LAB_mobile_450x294@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/portfolio_tab/Projekt_LAB_tab_354x294.jpg  1x,
-                                            images/portfolio_tab/Projekt_LAB_tab_354x294@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/portfolio_desk/Projekt_LAB_desk_370x294.jpg 1x,
-                                           images/portfolio_desk/Projekt_LAB_desk_370x294@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap grid--media" src="images/portfolio_mobile/Projekt_LAB_mobile_450x294.jpg" alt="Biała metka wisząca na sznurku" />
-                        </picture>
+                <source
+                  srcset="
+                    images/portfolio_mobile/Projekt_LAB_mobile_450x294.jpg    1x,
+                    images/portfolio_mobile/Projekt_LAB_mobile_450x294@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_tab/Projekt_LAB_tab_354x294.jpg    1x,
+                    images/portfolio_tab/Projekt_LAB_tab_354x294@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_desk/Projekt_LAB_desk_370x294.jpg    1x,
+                    images/portfolio_desk/Projekt_LAB_desk_370x294@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="no-gap grid--media"
+                  src="images/portfolio_mobile/Projekt_LAB_mobile_450x294.jpg"
+                  alt="Biała metka wisząca na sznurku"
+                />
+              </picture>
               <div class="grid__label">
                 <p class="grid__text">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -349,20 +425,33 @@
           <li>
             <figure class="grid__box">
               <picture>
-                            <source srcset="
-                                            images/portfolio_mobile/Growing_Business_mobile_450x294.jpg   1x,
-                                            images/portfolio_mobile/Growing_Business_mobile_450x294@2x.jpg 2x
-                                          " media="(max-width: 767px)" />
-                            <source srcset="
-                                            images/portfolio_tab/Growing_Business_tab_354x294.jpg   1x,
-                                            images/portfolio_tab/Growing_Business_tab_354x294@2x.jpg 2x
-                                          " media="(max-width: 1199px)" />
-                            <source srcset="
-                                           images/portfolio_desk/Growing_Business_desk_370x294.jpg 1x,
-                                           images/portfolio_desk/Growing_Business_desk_370x294@2x.jpg 2x
-                                          " media="(min-width: 1200px)" />
-                            <img class="no-gap grid--media" src="images/portfolio_mobile/Technocrack_mobile_450x294.jpg" alt="Ręce pracującego na laptopie mężczyzny" />
-                        </picture>
+                <source
+                  srcset="
+                    images/portfolio_mobile/Growing_Business_mobile_450x294.jpg    1x,
+                    images/portfolio_mobile/Growing_Business_mobile_450x294@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_tab/Growing_Business_tab_354x294.jpg    1x,
+                    images/portfolio_tab/Growing_Business_tab_354x294@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    images/portfolio_desk/Growing_Business_desk_370x294.jpg    1x,
+                    images/portfolio_desk/Growing_Business_desk_370x294@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="no-gap grid--media"
+                  src="images/portfolio_mobile/Technocrack_mobile_450x294.jpg"
+                  alt="Ręce pracującego na laptopie mężczyzny"
+                />
+              </picture>
               <div class="grid__label">
                 <p class="grid__text">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -379,75 +468,65 @@
         </ul>
       </div>
     </main>
-    <footer>
+    <footer id="pageFooterContact">
       <div class="container">
         <div class="page-footer">
-          <ul class="page-footer--tablet">
-            <li class="tablet--section">
-              <section>
-                <h2 class="page-footer__logo">
-                  <a href="index.html" class="logo">Web<span class="logo--footer">Studio</span></a>
-                </h2>
-                <address class="page-footer__address">m. Warszawa, Aleje Jerozolimskie 21</address>
-                <a href="mailto:info@example.com" class="page-footer__contact">info@example.com</a>
-                <a href="tel:+48111111111" class="page-footer__contact">+48 111 111 111</a>
-              </section>
-              <section class="page-footer__section">
-                <h4 class="page-footer__title">Dołącz do nas</h4>
-                <ul class="socials page-footer__socials">
-                  <li>
-                    <a href class="socials__icons socials__icons--footer">
-                      <svg class="socials__icons--instagram">
-                        <use href="images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href class="socials__icons socials__icons--footer">
-                      <svg class="socials__icons--twitter">
-                        <use href="images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href class="socials__icons socials__icons--footer">
-                      <svg class="socials__icons--facebook">
-                        <use href="images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href class="socials__icons socials__icons--footer">
-                      <svg class="socials__icons--linkedin">
-                        <use href="images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </section>
-            </li>
-            <li>
-              <section class="newsletter">
-                <h4 class="page-footer__title">Zapisz się do newslettera</h4>
-                <form name="signup_form" autocomplete="on" novalidate class="newsletter__form">
-                  <label>
-                    <input
-                      type="email"
-                      name="E-mail"
-                      placeholder="E-mail"
-                      class="newsletter__input"
-                    />
-                  </label>
-                  <button type="submit" class="newsletter__btn">
-                    <span class="newsletter__btn-text">Zapisz się</span>
-                    <svg class="newsletter__btn-icon">
-                      <use xlink:href="images/icons.svg#icon-icon_send"></use>
-                    </svg>
-                  </button>
-                </form>
-              </section>
-            </li>
-          </ul>
+          <div>
+            <h2 class="page-footer__logo">
+              <a href="index.html" class="logo">Web<span class="logo--footer">Studio</span></a>
+            </h2>
+            <address class="page-footer__address">m. Warszawa, Aleje Jerozolimskie 21</address>
+            <a href="mailto:info@example.com" class="page-footer__contact">info@example.com</a>
+            <a href="tel:+48111111111" class="page-footer__contact">+48 111 111 111</a>
+          </div>
+
+          <div class="page-footer__social-section">
+            <h4 class="page-footer__title">Dołącz do nas</h4>
+            <ul class="socials page-footer__socials">
+              <li>
+                <a href class="socials__icons socials__icons--footer">
+                  <svg class="socials__icons--instagram">
+                    <use href="images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href class="socials__icons socials__icons--footer">
+                  <svg class="socials__icons--twitter">
+                    <use href="images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href class="socials__icons socials__icons--footer">
+                  <svg class="socials__icons--facebook">
+                    <use href="images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href class="socials__icons socials__icons--footer">
+                  <svg class="socials__icons--linkedin">
+                    <use href="images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="newsletter">
+            <h4 class="page-footer__title">Zapisz się do newslettera</h4>
+            <form name="signup_form" autocomplete="on" novalidate class="newsletter__form">
+              <input type="email" name="E-mail" placeholder="E-mail" class="newsletter__input" />
+
+              <button type="submit" class="newsletter__btn">
+                <span class="newsletter__btn-text">Zapisz się</span>
+                <svg class="newsletter__btn-icon">
+                  <use xlink:href="images/icons.svg#icon-icon_send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
