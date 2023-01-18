@@ -536,7 +536,8 @@ header {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal__box {
-    height: 609px;
+    height: 100vh;
+    max-height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
