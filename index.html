@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <header class="container">
+    <header>
+      <div class="container">
       <div class="page-header">
         <h2 class="page-header__logo">
           <a href="index.html" class="logo">Web<span class="logo--header">Studio</span> </a>
@@ -51,6 +52,7 @@
         <button type="button" class="js-open-menu">
           <svg class="menu__open-btn"><use href="images/icons.svg#icon-menu_40px"></use></svg>
         </button>
+      </div>
       </div>
     </header>
 
@@ -110,7 +112,7 @@
 
                 <label class="checkbox">
                   <span class="checkbox__text"
-                    >Oświadczam iż akceptuję <a href class="checkbox__link">Regulamin</a> i
+                    >Oświadczam iż akceptuję <a href="#"class="checkbox__link">Regulamin</a> i
                     <a href class="checkbox__link">Politykę Prywatności</a>.</span
                   >
                   <input
@@ -584,8 +586,12 @@
       </div>
     </footer>
     <!-- MENU MOBILE -->
-          <div class="js-menu-container">
-          <button type="button" class="js-close-menu"><svg class="menu__button-icon"><use href="images/icons.svg#icon-close_24px"></svg></button>
+      <div class="js-menu-container">
+          <button type="button" class="js-close-menu">
+            <svg class="menu__button-icon">
+              <use href="images/icons.svg#icon-close_24px">
+            </svg>
+          </button>
         <nav>
           <ul class="mobile-nav">
             <li><a href="index.html" class="mobile-nav__item">Agencja</a></li>
@@ -611,9 +617,9 @@
           <li><a href="#" class="menu__socials--item">Facebook</a></li>
           <li><a href="#" class="menu__socials--item menu__socials--item--last">LinkedIn</a></li>
         </ul>
-        </div>
+      </div>
         
     <script src="./js/modal.js"></script>
-    <script src="js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
