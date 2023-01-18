@@ -10,26 +10,30 @@
   align-items: center;
   justify-content: center;
 
+  overflow: auto;
+
   transition-property: visibility, opacity;
   transition-duration: 300ms;
   transition-timing-function: linear;
 }
 
 .modal__box {
-  height: 609px;
+  height: 100vh;
   max-width: 450px;
   border-radius: 4px;
   background-color: get-bg-color(basic-background);
   display: flex;
   flex-direction: column;
-  position: absolute;
   padding-left: 40px;
   padding-right: 40px;
-
+  overflow: auto;
   transition-property: transform;
   transition-duration: 600ms;
   transition-timing-function: linear;
   transform: scale(1);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 609px;
+  }
   @media screen and (min-width: 1200px) {
     height: 581px;
     max-width: 528px;
