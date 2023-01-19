@@ -9,7 +9,7 @@ https://olgapikulska.github.io/Web-Studio/
 * [Sources](#sources)
 
 ## General info
-This is my first big project. WebStudio is a business website, dedicated to potential customers.  Working on it helped me to learn about BEM, strategy Mobile First, RWD, Flexbox, Grid and of course HTML and CSS. 
+This is my first big project. WebStudio is a business website, dedicated to potential customers.  Working on it helped me to learn BEM, strategy Mobile First, RWD, Flexbox, Grid and of course HTML and CSS. Also I got to know how to cooperate with designs on Figma. 
 	
 ## Technologies
 Project is created with:
@@ -21,6 +21,7 @@ Project is created with:
 <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" title="Figma" alt="Figma" width="40" height="40"/>&nbsp;
  
 ## Sources
-This website has been perfomed as a homework result of Fullstack Developer Course by GoIT. 
+This website has been performed as a homework result of Fullstack Developer Course by GoIT. 
