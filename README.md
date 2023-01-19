@@ -9,7 +9,7 @@ https://olgapikulska.github.io/Web-Studio/
 * [Sources](#sources)
 
 ## General info
-This is my first big project. WebStudio is a business website, dedicated to potential customers.  Working on it helped me to learn BEM, strategy Mobile First, RWD, Flexbox, Grid and of course HTML and CSS. Also I got to know how to cooperate with designs on Figma. 
+This is my first big project. WebStudio is a business website, dedicated to potential customers.  Working on it helped me learn BEM, strategy Mobile First, RWD, Flexbox, Grid and of course HTML and CSS. Also I got to know how to cooperate with designs on Figma. 
 	
 ## Technologies
 Project is created with:
