@@ -1,5 +1,5 @@
 # Web-Studio - company website 
-Website created with HTML5, CSS3 / SASS, JavaScript. 
+Website created with HTML5, CSS3 / SASS, JavaScript. It was made according to the mobile first principle and is completely responsive.
 
 https://olgapikulska.github.io/Web-Studio/
 
